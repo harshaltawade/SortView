@@ -1,0 +1,241 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: full-width;
+}
+
+nav {
+  background-color: rgb(59, 58, 58);
+  color: white;
+  display: grid;
+  grid-template-columns: 30% 60%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  padding: 0% 5%;
+  background: linear-gradient(to bottom, #34495e, #2c3e50);
+}
+nav .array-inputs {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  place-content: center;
+  padding: 5% 0%;
+}
+nav .array-inputs #a_size {
+  padding: 5% 0%;
+}
+nav .array-inputs #a_speed {
+  padding: 5% 0%;
+}
+nav .array-inputs #a_generate {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 4% 0% 0% 0%;
+  padding-left: 20%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+nav .array-inputs #a_generate:hover {
+  cursor: pointer;
+}
+nav .header_right {
+  display: flex;
+  flex-direction: column;
+}
+nav .header_right .nav-heading {
+  display: inline-block;
+  font-size: xxx-large;
+  padding: 3% 0%;
+}
+nav .header_right .algos {
+  display: grid;
+  grid-template-columns: repeat(6, 16.6666666667%);
+  place-content: center;
+  padding: 2% 0%;
+}
+nav .header_right .algos button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 5% 0%;
+  font-size: x-large;
+}
+nav .header_right .algos button:hover {
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+nav .header_right .algos .butt_locked {
+  background-color: transparent;
+  cursor: pointer;
+}
+nav .header_right .algos .butt_locked:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+nav .header_right .algos .butt_selected {
+  background-color: #27ae60;
+  color: white;
+  cursor: pointer;
+}
+nav .header_right .algos .butt_selected:hover {
+  background-color: white;
+  cursor: pointer;
+}
+nav .header_right .algos .butt_unselected:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+
+/* Rest of the CSS rules */
+header{
+  background-color: #3498db;
+}
+
+.header-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+section {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+}
+section .Complexity_Containers {
+  margin-top: 20%;
+  background-color: #f2f2f2;
+
+}
+section .Complexity_Containers .Pair_Definitions {
+  margin-top: 15px;
+}
+section .Complexity_Containers .Pair_Definitions p {
+  display: inline;
+}
+section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+  font-size: medium;
+  text-transform: none;
+}
+section #Info_Cont1 {
+  padding: 20% 10%;
+}
+section #Info_Cont1 h3 {
+  text-decoration: underline;
+}
+section #array_container {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  justify-content: center;
+  align-items: flex-end;
+  background: linear-gradient(to bottom, #ffb030, #e74c3c);
+  padding: 20px 0;
+}
+section #Info_Cont2 {
+  padding: 20% 10%;
+}
+section #Info_Cont2 h3 {
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  display: flex;
+  background-color: #3a4a5a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.Pair_Definitions{
+  display: flex;
+  margin-top: 5%;
+}
+
+.Complexity_Containers{
+  margin-top: 20%;
+  /* background-color: #f2f2f2; */
+}
+
+.third-section{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.forth-section{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.array-inputs p {
+  margin-bottom: 6px; /* Adjust the spacing as needed */
+  font-size: 12px; /* Adjust the font size as needed */
+}
+
+.array-inputs input {
+  width: 80%;
+  margin-bottom: 6px; /* Adjust the spacing as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+.array-inputs button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 6px 12px; /* Adjust the padding as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+  cursor: pointer;
+}
+
+/* Rest of your CSS rules */
+
+.array-inputs button,
+.algos button {
+    background-color: #3498db; /* Add your desired background color */
+    border: none;
+    color: white;
+    outline: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.array-inputs button:hover,
+.algos button:hover {
+    background-color: #2980b9; /* Add your desired hover background color */
+}
+
+.footer-section.right-section .algos button:last-child {
+    margin-right: 0; /* Remove margin from the last button for alignment */
+}
